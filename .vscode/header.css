@@ -1,0 +1,25 @@
+.header{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search-bar{
+
+    height: 10px;
+    flex: 1;
+    margin-right: 35px;
+    max-width: 500px;
+}
+
+.left-section{
+ background-color: aquamarine;
+ width: 150px;
+ margin-right: 75px;
+}
+
+.right-section{
+    background-color: brown;
+    width: 200px;
+}
