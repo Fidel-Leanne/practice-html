@@ -48,8 +48,40 @@
     border-color: gray;
     margin-left: -1px;
     margin-right: 10px;
+  
 }
+.search-button,
+.microphone-button,
+.image-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-button .tool-tip,
+.microphone-button .tool-tip,
+.image-container .tool-tip{
+    position: absolute;
+    background-color: rgb(175, 175, 175);
+    color: white;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+    border-radius: 2px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: Roboto , Arial;
+}
+.search-button:hover .tool-tip,
+.microphone-button:hover .tool-tip,
+.image-container:hover .tool-tip{
 
+    opacity: 1;
+}
 .search-icon{
     height: 30px;
     
@@ -66,6 +98,7 @@ height: 30px;
     padding: 0;
     border-radius: 20px;
     border: none;
+    position: relative;
 }
 
 .left-section{
@@ -113,9 +146,12 @@ height: 30px;
     right: 0;
     padding-left: 4px;
     padding-right: 4px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     border-radius: 50%;
+    font-family: Roboto , Arial;
+    font-size: 11px;
+    font-weight: 500;
 }
 
 .channel-p{

@@ -36,6 +36,23 @@
     row-gap: 40px;
     padding-top: 10px;
 }
+@media( max-width: 750px){
+    .video-all-grid{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media( min-width:751px )and (max-width:1599px){
+.video-all-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media( min-width: 1600px){
+    .video-all-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 
 .thumbnail-row{
     position: relative;
